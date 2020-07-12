@@ -1,0 +1,124 @@
+<main class="m-10">
+  <header class="my-10">
+    <h1>EJ Tailwind Config</h1>
+  </header>
+  <!-- Colors -->
+  <section class="sec-colors" :class="borderRadiusClass">
+    <h2 class="flex items-center">Colors (Border Radius: <label v-for="val of ['none', 'sm', 'default', 'full']" :class="val === borderRadius ? 'active' : ''"><input v-model="borderRadius" type="radio" :value="val"><code>{{ val }}</code></label>)</h2>
+    <div class="flex flex-wrap items-start" style="width: 800px;">
+      <h3>Basic</h3>
+      <div class="color"><i class="bg-white"></i><code>white</code></div>
+      <div class="color"><i class="bg-black"></i><code>black</code></div>
+      <div class="color"><i class="bg-transparent shadow-none border border-dashed border-black"></i><code>transparent</code></div>
+
+      <h3>Gray</h3>
+      <div class="color mb-4"><i class="bg-gray-lightest"></i><code>lightest</code></div>
+      <div class="color"><i class="bg-gray-lighter"></i><code>lighter</code></div>
+      <div class="color"><i class="bg-gray-light"></i><code>light</code></div>
+      <div class="color mb-4"><i class="bg-gray"></i><code>default</code></div>
+      <div class="color"><i class="bg-gray-dark"></i><code>dark</code></div>
+      <div class="color"><i class="bg-gray-darker"></i><code>darker</code></div>
+      <div class="color"><i class="bg-gray-darkest"></i><code>darkest</code></div>
+
+      <h3>Red</h3>
+      <div class="color"><i class="bg-red-lighter"></i><code>lighter</code></div>
+      <div class="color"><i class="bg-red-light"></i><code>light</code></div>
+      <div class="color"><i class="bg-red"></i><code>default</code></div>
+
+      <h3>Orange</h3>
+      <div class="color"><i class="bg-orange-lighter"></i><code>lighter</code></div>
+      <div class="color"><i class="bg-orange-light"></i><code>light</code></div>
+      <div class="color"><i class="bg-orange"></i><code>default</code></div>
+
+      <h3>Yellow</h3>
+      <div class="color"><i class="bg-yellow-lighter"></i><code>lighter</code></div>
+      <div class="color"><i class="bg-yellow-light"></i><code>light</code></div>
+      <div class="color"><i class="bg-yellow"></i><code>default</code></div>
+
+      <h3>Green</h3>
+      <div class="color"><i class="bg-green-lighter"></i><code>lighter</code></div>
+      <div class="color"><i class="bg-green-light"></i><code>light</code></div>
+      <div class="color"><i class="bg-green"></i><code>default</code></div>
+
+      <h3>Blue</h3>
+      <div class="color"><i class="bg-blue-lighter"></i><code>lighter</code></div>
+      <div class="color"><i class="bg-blue-light"></i><code>light</code></div>
+      <div class="color"><i class="bg-blue"></i><code>default</code></div>
+
+      <h3>Purple</h3>
+      <div class="color"><i class="bg-purple-lighter"></i><code>lighter</code></div>
+      <div class="color"><i class="bg-purple-light"></i><code>light</code></div>
+      <div class="color"><i class="bg-purple"></i><code>default</code></div>
+    </div>
+  </section>
+  <!-- Font Sizes -->
+  <section class="sec-font-sizes">
+    <h2>Font Sizes</h2>
+    <dl>
+      <div>
+        <dt class="flex-none w-48 leading-base"><code>.text-xs</code></dt>
+        <dd class="text-xs">
+          <p>我能吞下玻璃而不伤身体。</p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
+        </dd>
+      </div>
+      <div>
+        <dt class="flex-none w-48 leading-base"><code>.text-sm</code><br><code>.leading-sm</code></dt>
+        <dd class="text-sm leading-sm">
+          <p>我能吞下玻璃而不伤身体。</p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
+        </dd>
+      </div>
+      <div>
+        <dt class="flex-none w-48 leading-base"><code>.text-base</code><br><code>.leading-base</code></dt>
+        <dd class="text-base leading-base">
+          <p>我能吞下玻璃而不伤身体。</p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
+        </dd>
+      </div>
+      <div>
+        <dt class="flex-none w-48 leading-base"><code>.text-lg</code><br><code>.leading-lg</code></dt>
+        <dd class="text-lg leading-lg">
+          <p>我能吞下玻璃而不伤身体。</p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
+        </dd>
+      </div>
+      <div>
+        <dt class="flex-none w-48 leading-base"><code>.text-xl</code><br><code>.leading-xl</code></dt>
+        <dd class="text-xl leading-xl">
+          <p>我能吞下玻璃而不伤身体。</p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
+        </dd>
+      </div>
+      <div>
+        <dt class="flex-none w-48 leading-base"><code>.text-2xl</code><br><code>.leading-2xl</code></dt>
+        <dd class="text-2xl leading-2xl">
+          <p>我能吞下玻璃而不伤身体。</p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
+        </dd>
+      </div>
+      <div>
+        <dt class="flex-none w-48 leading-base"><code>.text-3xl</code><br><code>.leading-3xl</code></dt>
+        <dd class="text-3xl leading-3xl">
+          <p>我能吞下玻璃而不伤身体。</p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
+        </dd>
+      </div>
+      <div>
+        <dt class="flex-none w-48 leading-base"><code>.text-4xl</code><br><code>.leading-4xl</code></dt>
+        <dd class="text-4xl leading-4xl">
+          <p>我能吞下玻璃而不伤身体。</p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
+        </dd>
+      </div>
+    </dl>
+  </section>
+  <!-- Container Sizes -->
+  <section class="sec-container">
+    <h2>Container Sizes</h2>
+    <section>
+      <h3>.container</h3>
+      <div class="container"></div>
+    </section>
+  </section>
+</main>
